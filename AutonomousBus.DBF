@@ -1,0 +1,29 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+
+[NUMBER_OF_MESSAGES] 3
+
+[START_MSG] AS_DynamicsDL,1280,8,8,1,S
+[START_SIGNALS] Speed_Actual,8,1,0,U,255,0,1,0.000000,1.000000,km/h,
+[START_SIGNALS] Speed_Target,8,2,0,U,255,0,1,0.000000,1.000000,km/h,
+[START_SIGNALS] Steering_Angle_Actual,8,3,0,I,127,-128,1,0.000000,0.500000,º,
+[START_SIGNALS] Steering_Angle_Target,8,4,0,I,127,-128,1,0.000000,0.500000,º,
+[START_SIGNALS] Brake_Hydraulic_Actual,8,5,0,U,255,0,1,0.000000,1.000000,º,
+[START_SIGNALS] Brake_Hydraulic_Target,8,6,0,U,255,0,1,0.000000,1.000000,º,
+[START_SIGNALS] Motor_Moment_Actual,8,7,0,I,127,-128,1,0.000000,1.000000,%,
+[START_SIGNALS] Motor_Moment_Target,8,8,0,I,127,-128,1,0.000000,1.000000,%,
+[END_MSG]
+
+[START_MSG] AS_DynamicsDL_2,1281,6,3,1,S
+[START_SIGNALS] Accelaration_Longitudinal,16,1,0,I,32767,-32768,1,0.000000,0.001953,m/s^2,
+[START_SIGNALS] Accelaration_Lateral,16,3,0,I,32767,-32768,1,0.000000,0.001953,m/s^2,
+[START_SIGNALS] Yaw_Rate,16,5,0,I,32767,-32768,1,0.000000,0.007813,º/s,
+[END_MSG]
+
+[START_MSG] AS_System_Status,1282,5,0,1,S
+[END_MSG]
